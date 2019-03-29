@@ -1,0 +1,15 @@
+﻿<Window x:Class="Product2.Test.MineGame"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MineGame" Height="546.854" Width="886.517" Loaded="Window_Loaded">
+    <Grid>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+            <CheckBox Name="IsFill" Content="是否填充"></CheckBox>
+            <Button Content="添加" HorizontalAlignment="Right"  Click="Reflesh_Click" VerticalAlignment="Top" Width="82" Height="45"/>
+            <Button Content="撤销" HorizontalAlignment="Right"  Click="Bebug_Click" VerticalAlignment="Top" Width="82" Height="45"/>
+            <Button Content="重绘" HorizontalAlignment="Right"  Click="Clear_Click" VerticalAlignment="Top" Width="82" Height="45"/>
+        </StackPanel>
+        <Canvas Name="MineCanvas" Width="879" Height="516" HorizontalAlignment="Center" VerticalAlignment="Center" Cursor="Hand">
+        </Canvas>
+    </Grid>
+</Window>
